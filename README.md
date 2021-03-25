@@ -14,7 +14,7 @@ service is free to use and requies no credentialing.
 
 Currently only the following function is implemented:
 
-  - `find_location()`: Location query for DC addresses, intersections,
+  - `getMar()`: Location query for DC addresses, intersections,
     blocks, and place names
 
 ## Installation
