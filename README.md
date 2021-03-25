@@ -22,7 +22,7 @@ Currently only the following function is implemented:
 You can install the development version from GitHub
 
 ``` r
-remotes::install_github("tombuko/marPy")
+$ git clone https://github.com/tombuko/marPy.git
 ```
 
 ## Usage
