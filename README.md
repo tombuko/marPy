@@ -15,7 +15,7 @@ The MAR web service is free to use and requires no credentialing.
 
 ## Limitations
 
-Currently this library only returns the highest matching, first return, for an abiguous address. If the address is a non-dc address or not found in the mar it will resolve with `non_dc_address`
+Currently this library only returns the highest matching `confidencelevel` , ie. first return, for any ambiguous address. If the address is a non-dc address or not found in the mar it will resolve with `non_dc_address`
 
 ## Installation
 
