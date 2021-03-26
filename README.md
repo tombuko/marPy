@@ -12,6 +12,11 @@ The `marPy` package gives Python users
 a set of fuctions to interact with the MAR web service. 
 The MAR web service is free to use and requies no credentialing.
 
+
+## Limitations
+
+Currently this library only returns the highest matching, first return, for an abiguous address. If the address is a non-dc address or not found in the mar it will resolve with `non_dc_address`
+
 ## Installation
 
 You can install the development version from GitHub
