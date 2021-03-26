@@ -28,7 +28,7 @@ git clone https://github.com/tombuko/marPy.git
 ## Usage
 
 ``` python
-address = marpy('2009 PARK ROAD NW').get_MAR()
+address = marPy('2009 PARK ROAD NW').get_MAR()
 print(address.latitude)
 print(address.longitude)
 
