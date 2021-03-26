@@ -1,4 +1,6 @@
-class MAR:
+import requests
+
+class marpy:
     '''
     A class used to return a MAR object that returns attributes related to an address in Washington DC
     
@@ -51,11 +53,11 @@ class MAR:
         imagename
         confidencelevel
     
-    Methods
-    ---------
-    get_MAR()
-        fetches the address attributes and makes them available
-    '''
+        Methods
+        ---------
+        get_MAR()
+            fetches the address attributes and makes them available
+        '''
     
     
     
@@ -66,11 +68,12 @@ class MAR:
         address = The DC address string
         
         '''
+       
         self.u_address = address
        
     def get_MAR(self):
         
-           '''
+        '''
         Parameters
         ---------
         self from the MAR class
@@ -80,8 +83,8 @@ class MAR:
         returns 'non_dc_val' if address can't be resolved
         
         '''
-        api_url_base = 'http://citizenatlas.dc.gov/newwebservices/locationverifier.asmx';
-        operation = '/findLocation2';
+        api_url_base = 'http://citizenatlas.dc.gov/newwebservices/locationverifier.asmx'
+        operation = '/findLocation2'
         payload = {'str': self.u_address, 'f': 'json'}
         target_url = (api_url_base + operation)
         r = requests.get(target_url,  payload)
