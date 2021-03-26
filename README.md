@@ -6,31 +6,33 @@ A Python library to interact with DC's MAR (master address repository) API
 District of Columbia’s [Master Address Repository
 (MAR)](https://dcatlas.dcgis.dc.gov/mar/) provides a [web
 service](https://opendata.dc.gov/pages/mar-webservices) with geocoding
-and address verification operations. The `marPy` package gives Python users
-a set of fuctions to interact with the MAR web service. The MAR web
-service is free to use and requies no credentialing.
+and address verification operations. 
 
-## What’s Inside?
-
-Currently only the following function is implemented:
-
-  - `getMar()`: Location query for DC addresses, intersections,
-    blocks, and place names
+The `marPy` package gives Python users
+a set of fuctions to interact with the MAR web service. 
+The MAR web service is free to use and requies no credentialing.
 
 ## Installation
 
 You can install the development version from GitHub
 
-``` r
-$ git clone https://github.com/tombuko/marPy.git
+``` sh
+git clone https://github.com/tombuko/marPy.git
 ```
 
 ## Usage
 
+``` python
+address = marpy('2009 PARK ROAD NW').get_MAR()
+print(address.latitude)
+print(address.longitude)
+
+```
+
 Below is an example of the output provided by the MAR (in long
 format):
 
-``` r
+``` python
  {'ADDRESS_ID': 233919,
    'MARID': 233919,
    'STATUS': 'ACTIVE',
@@ -78,6 +80,54 @@ format):
    'IMAGENAME': 'DF133627.jpg',
    'ConfidenceLevel': 80.25}'
 ```
+The callable MAR objects in `marPy` are:
 
-    
+```python
+    address_id
+    marid
+    status
+    fulladdress
+    addrnum
+    addrnumsuffix
+    stname
+    street_type
+    quadrant
+    city
+    state
+    xcoord
+    ycoord
+    ssl
+    anc
+    psa
+    ward
+    nbhd_action
+    cluster_
+    poldist
+    roc
+    census_tract
+    vote_prcnct
+    smd
+    zipcode
+    nationalgrid
+    roadwaysegid
+    focus_improvement_area
+    has_alias
+    has_condo_unit
+    has_res_unit
+    has_ssl
+    latitude
+    longitude
+    streetviewurl
+    res_type
+    ward_2002
+    ward_2012
+    anc_2002
+    anc_2012
+    smd_2002
+    smd_2012
+    imageurl
+    imagedir
+    imagename
+    confidencelevel
+```
  
