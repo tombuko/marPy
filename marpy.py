@@ -1,6 +1,6 @@
 import requests
 
-class marpy:
+class marPy:
     '''
     A class used to return a MAR object that returns attributes related to an address in Washington DC
     
