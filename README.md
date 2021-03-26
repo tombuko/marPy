@@ -86,7 +86,7 @@ format):
    'IMAGENAME': 'DF133627.jpg',
    'ConfidenceLevel': 80.25}'
 ```
-The callable MAR objects in `marPy` are:
+The callable MAR attributes from `marPy` are:
 
 ```python
     address_id
