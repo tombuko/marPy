@@ -8,9 +8,9 @@ District of Columbia’s [Master Address Repository
 service](https://opendata.dc.gov/pages/mar-webservices) with geocoding
 and address verification operations. 
 
-The `marPy` package gives Python users
-a set of fuctions to interact with the MAR web service. 
-The MAR web service is free to use and requies no credentialing.
+The `marPy` package gives Python users an object that returns MAR attributes
+that can be used to enrich an existing data process.
+The MAR web service is free to use and requires no credentialing.
 
 
 ## Limitations
