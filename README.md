@@ -44,7 +44,7 @@ print(lookup_address.longitude)
 
 ```
 
-Below is an example of the output of ```python lookup_address.__dict___```:
+Below is an example of the output of `lookup_address.___dict___`:
 
 ``` python
 {'address': '2009 PARK ROAD NW',
