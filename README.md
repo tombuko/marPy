@@ -29,9 +29,18 @@ git clone https://github.com/tombuko/marPy.git
 
 ``` python
 from marpy import marPy
-address = marPy('2009 PARK ROAD NW').get_MAR()
-print(address.latitude)
-print(address.longitude)
+# Create the object
+lookup_address = marPy()
+
+# Set the address to lookup
+lookup_address = '2009 PARK ROAD NW'
+
+# Run the address against the MAR
+lookup_address = lookup_adress.get_MAR()
+
+# Return attributes about the address from the MAR
+print(lookup_address.latitude)
+print(lookup_address.longitude)
 
 ```
 
