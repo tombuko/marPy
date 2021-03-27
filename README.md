@@ -33,10 +33,10 @@ from marpy import marPy
 lookup_address = marPy()
 
 # Set the address to lookup
-lookup_address = '2009 PARK ROAD NW'
+lookup_address.address = '2009 PARK ROAD NW'
 
 # Run the address against the MAR
-lookup_address = lookup_adress.get_MAR()
+lookup_address = lookup_address.get_MAR()
 
 # Return attributes about the address from the MAR
 print(lookup_address.latitude)
