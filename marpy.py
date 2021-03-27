@@ -61,7 +61,7 @@ class marPy:
     
     
     
-    def __init__(self, address):
+    def __init__(self, address = ''):
         '''
         Parameters
         ---------
@@ -69,7 +69,7 @@ class marPy:
         
         '''
        
-        self.u_address = address
+        self.address = address
        
     def get_MAR(self):
         
@@ -85,7 +85,7 @@ class marPy:
         '''
         api_url_base = 'http://citizenatlas.dc.gov/newwebservices/locationverifier.asmx'
         operation = '/findLocation2'
-        payload = {'str': self.u_address, 'f': 'json'}
+        payload = {'str': self.address, 'f': 'json'}
         target_url = (api_url_base + operation)
         r = requests.get(target_url,  payload)
 
@@ -189,4 +189,3 @@ class marPy:
             self.imagename = 'non_dc_val'
             self.confidencelevel = 'non_dc_val'
             return(self)
-
