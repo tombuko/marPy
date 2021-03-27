@@ -70,6 +70,17 @@ class marPy:
         '''
        
         self.address = address
+        
+    @property
+    def address(self):
+        print('getting address')
+        return self._address
+    @address.setter
+    def address(self, value):
+        print('setting value')
+        self._address = get_MAR(value)
+            
+  
        
     def get_MAR(self):
         
